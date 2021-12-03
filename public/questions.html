@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Dashboard</title>
+
+    <!-- Custom fonts for this template-->
+    <link
+      href="vendor/fontawesome-free/css/all.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #f9f9fa;
+      }
+
+      .container {
+        margin-top: 100px;
+      }
+
+      .modal.fade .modal-bottom,
+      .modal.fade .modal-left,
+      .modal.fade .modal-right,
+      .modal.fade .modal-top {
+        position: fixed;
+        z-index: 1055;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0;
+        max-width: 100%;
+      }
+
+      .modal.fade .modal-right {
+        left: auto !important;
+        transform: translate3d(100%, 0, 0);
+        transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+      }
+
+      .modal.fade.show .modal-bottom,
+      .modal.fade.show .modal-left,
+      .modal.fade.show .modal-right,
+      .modal.fade.show .modal-top {
+        transform: translate3d(0, 0, 0);
+      }
+
+      .w-xl {
+        width: 320px;
+      }
+
+      .modal-content,
+      .modal-footer,
+      .modal-header {
+        border: none;
+      }
+
+      .h-100 {
+        height: 100% !important;
+      }
+
+      .list-group.no-radius .list-group-item {
+        border-radius: 0 !important;
+      }
+
+      .btn-light {
+        color: #212529;
+        background-color: #f5f5f6;
+        border-color: #f5f5f6;
+      }
+
+      .btn-light:hover {
+        color: #212529;
+        background-color: #e1e1e4;
+        border-color: #dadade;
+      }
+
+      .modal-footer {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 1rem;
+        border-top: 1px solid rgba(160, 175, 185, 0.15);
+        border-bottom-right-radius: 0.3rem;
+        border-bottom-left-radius: 0.3rem;
+      }
+    </style>
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet" />
+  </head>
+
+  <body id="page-top">
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+      <!-- Sidebar -->
+      <ul
+        class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion"
+        id="accordionSidebar"
+      >
+        <!-- Sidebar - Brand -->
+        <a
+          class="sidebar-brand d-flex align-items-center justify-content-center"
+          href="index.html"
+        >
+          <div class="sidebar-brand-icon rotate-n-15">
+            <i class="fas fa-laugh-wink"></i>
+          </div>
+          <div class="sidebar-brand-text mx-3">Quizz App <sup>2</sup></div>
+        </a>
+
+        <!-- Divider -->
+        <hr class="sidebar-divider my-3" />
+
+        <!-- Nav Item - Dashboard -->
+        <!-- <li class="nav-item active">
+          <a class="nav-link" href="index.html">
+            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <span>Dashboard</span></a
+          >
+        </li> -->
+
+        <!-- Divider -->
+
+        <!-- Divider -->
+        <!-- <hr class="sidebar-divider" /> -->
+
+        <!-- Heading -->
+        <div class="sidebar-heading">Management</div>
+
+        <!-- Nav Item - Pages Collapse Menu -->
+
+        <!-- Nav Item - Charts -->
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">
+            <i class="fas fa-fw fa-chart-area"></i>
+            <span>Subjects</span></a
+          >
+        </li>
+
+        <!-- Nav Item - Tables -->
+        <li class="nav-item">
+          <a class="nav-link" href="teachers.html">
+            <i class="fas fa-fw fa-table"></i>
+            <span>Teachers</span></a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="levels.html">
+            <i class="fas fa-fw fa-users"></i>
+            <span>Levels</span></a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="questions.html">
+            <i class="fas fa-fw fa-users"></i>
+            <span>Questions</span></a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="tables.html">
+            <i class="fas fa-fw fa-users"></i>
+            <span>Students</span></a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="tables.html">
+            <i class="fas fa-fw fa-users"></i>
+            <span>Tests</span></a
+          >
+        </li>
+
+        <!-- Divider -->
+        <hr class="sidebar-divider d-none d-md-block" />
+
+        <!-- Sidebar Toggler (Sidebar) -->
+        <div class="text-center d-none d-md-inline">
+          <button class="rounded-circle border-0" id="sidebarToggle"></button>
+        </div>
+      </ul>
+      <!-- End of Sidebar -->
+
+      <!-- Content Wrapper -->
+      <div id="content-wrapper" class="d-flex flex-column">
+        <!-- Main Content -->
+        <div id="content">
+          <!-- Topbar -->
+          <nav
+            class="
+              navbar navbar-expand navbar-light
+              bg-white
+              topbar
+              mb-4
+              static-top
+              shadow
+            "
+          >
+            <!-- Sidebar Toggle (Topbar) -->
+            <button
+              id="sidebarToggleTop"
+              class="btn btn-link d-md-none rounded-circle mr-3"
+            >
+              <i class="fa fa-bars"></i>
+            </button>
+
+            <!-- Topbar Search -->
+            <!-- <form
+                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                        <div class="input-group">
+                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
+                                aria-label="Search" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="button">
+                                    <i class="fas fa-search fa-sm"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form> -->
+
+            <!-- Topbar Navbar -->
+            <ul class="navbar-nav ml-auto">
+              <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+              <li class="nav-item dropdown no-arrow d-sm-none">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="searchDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <i class="fas fa-search fa-fw"></i>
+                </a>
+                <!-- Dropdown - Messages -->
+                <div
+                  class="
+                    dropdown-menu dropdown-menu-right
+                    p-3
+                    shadow
+                    animated--grow-in
+                  "
+                  aria-labelledby="searchDropdown"
+                >
+                  <form class="form-inline mr-auto w-100 navbar-search">
+                    <div class="input-group">
+                      <input
+                        type="text"
+                        class="form-control bg-light border-0 small"
+                        placeholder="Search for..."
+                        aria-label="Search"
+                        aria-describedby="basic-addon2"
+                      />
+                      <div class="input-group-append">
+                        <button class="btn btn-primary" type="button">
+                          <i class="fas fa-search fa-sm"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </li>
+
+              <div class="topbar-divider d-none d-sm-block"></div>
+
+              <!-- Nav Item - User Information -->
+              <li class="nav-item dropdown no-arrow">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="userDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <span class="mr-2 d-none d-lg-inline text-gray-600 small"
+                    >Hassan essajai</span
+                  >
+                  <img
+                    class="img-profile rounded-circle"
+                    src="img/undraw_profile.svg"
+                  />
+                </a>
+                <!-- Dropdown - User Information -->
+                <div
+                  class="
+                    dropdown-menu dropdown-menu-right
+                    shadow
+                    animated--grow-in
+                  "
+                  aria-labelledby="userDropdown"
+                >
+                  <a class="dropdown-item" href="#">
+                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                    Profile
+                  </a>
+                  <!-- <a class="dropdown-item" href="#">
+                                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Settings
+                                </a> -->
+                  <div class="dropdown-divider"></div>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    data-toggle="modal"
+                    data-target="#logoutModal"
+                  >
+                    <i
+                      class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"
+                    ></i>
+                    Logout
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </nav>
+          <!-- End of Topbar -->
+
+          <!-- Begin Page Content -->
+          <div class="container-fluid">
+            <!-- Content Row -->
+            <div class="row justify-content-between">
+              <div class="col-6 mb-4">All questions</div>
+
+              <div class="col-6 mb-4 text-right">
+                <button
+                  class="btn btn-primary rounded"
+                  data-toggle="modal"
+                  data-target="#modal-right"
+                  data-toggle-class="modal-open-aside"
+                >
+                  <i class="fas fa-plus mr-3"></i>Add
+                </button>
+              </div>
+            </div>
+
+            <!-- Content Row -->
+
+            <table class="table table-hover" id="questions"></table>
+          </div>
+          <!-- /.container-fluid -->
+        </div>
+        <!-- End of Main Content -->
+
+        <!-- Footer -->
+        <footer class="sticky-footer bg-white">
+          <div class="container my-auto">
+            <div class="copyright text-center my-auto">
+              <span>Copyright &copy; Your Website 2021</span>
+            </div>
+          </div>
+        </footer>
+        <!-- End of Footer -->
+      </div>
+      <!-- End of Content Wrapper -->
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div
+      class="modal fade"
+      id="logoutModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+            <button
+              class="close"
+              type="button"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Select "Logout" below if you are ready to end your current session.
+          </div>
+          <div class="modal-footer">
+            <button
+              class="btn btn-secondary"
+              type="button"
+              data-dismiss="modal"
+            >
+              Cancel
+            </button>
+            <a class="btn btn-primary" href="login.html">Logout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="modal-right" class="modal fade" data-backdrop="true">
+      <div class="modal-dialog modal-right w-xl">
+        <form class="modal-content h-100 no-radius" id="form">
+          <div class="modal-header">
+            <div class="modal-title text-md">add teacher</div>
+            <button class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group mb-2">
+              <label for="exampleFormControlInput1">Name</label>
+              <input
+                type="name"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="name"
+                name="name"
+              />
+            </div>
+            <div class="form-group mb-2">
+              <label for="exampleFormControlInput1">Min points</label>
+              <input
+                type="number"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="Min Point"
+                name="min"
+              />
+            </div>
+            <div class="form-group mb-2">
+              <label for="exampleFormControlInput1">Max points</label>
+              <input
+                type="text"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="Max points"
+                name="max"
+              />
+            </div>
+      
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-light" data-dismiss="modal">
+              Close
+            </button>
+            <button type="submit" class="btn btn-primary">Save Details</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div id="container_model_update">
+        
+    </div>
+    <!-- modals container  -->
+    <!-- Bootstrap core JavaScript-->
+    <script type="module" src="vendor/jquery/jquery.min.js"></script>
+    <script
+      type="module"
+      src="vendor/bootstrap/js/bootstrap.bundle.min.js"
+    ></script>
+
+    <!-- Core plugin JavaScript-->
+    <script
+      type="module"
+      src="vendor/jquery-easing/jquery.easing.min.js"
+    ></script>
+
+    <!-- Custom scripts for all pages-->
+    <script type="module" src="js/sb-admin-2.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script type="module" src="vendor/chart.js/Chart.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script type="module" src="js/demo/chart-area-demo.js"></script>
+    <script type="module" src="js/demo/chart-pie-demo.js"></script>
+    <!-- myjs -->
+    <script type="module" src="../controller/questionController.js"></script>
+  </body>
+</html>

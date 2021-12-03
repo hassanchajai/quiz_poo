@@ -1,0 +1,161 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "mohammed boumlik",
+      "email": "mohammed@domain.co",
+      "phone": "06********",
+      "cin": "ma51544"
+    }
+  ],
+  "teachers": [
+    {
+      "name": "jeffff",
+      "email": "jeff@la.nooo",
+      "cin": "",
+      "subjects": [
+        "fveNy31"
+      ],
+      "id": 3
+    },
+    {
+      "name": "hh",
+      "email": "hassan@admin.com",
+      "cin": "ma615151",
+      "subjects": [
+        "elKYLFq"
+      ],
+      "id": 4
+    }
+  ],
+  "subjects": [
+    {
+      "name": "php",
+      "parent": null,
+      "image": "https://images.unsplash.com/photo-1638457190880-b88e867a84f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=714&q=80",
+      "id": "hz_6Lc0"
+    },
+    {
+      "name": "conditions",
+      "parent": "hz_6Lc0",
+      "image": "https://images.unsplash.com/photo-1638457190880-b88e867a84f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=714&q=80",
+      "id": "uMZj68l"
+    },
+    {
+      "name": "if/else",
+      "parent": "uMZj68l",
+      "image": "https://images.unsplash.com/photo-1638457190880-b88e867a84f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=714&q=80",
+      "id": "tQ5tVWb"
+    },
+    {
+      "name": "something else",
+      "parent": "tQ5tVWb",
+      "image": "https://images.unsplash.com/photo-1638457190880-b88e867a84f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=714&q=80",
+      "id": "wFsKCUZ"
+    },
+    {
+      "name": "vv",
+      "parent": "tQ5tVWb",
+      "image": "https://images.unsplash.com/photo-1638457190880-b88e867a84f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=714&q=80",
+      "id": "fveNy31"
+    },
+    {
+      "name": "PYthon",
+      "parent": null,
+      "image": "https://images.unsplash.com/photo-1638457190880-b88e867a84f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=714&q=80",
+      "id": "d6plIkd"
+    },
+    {
+      "name": "yo",
+      "parent": "d6plIkd",
+      "image": "https://images.unsplash.com/photo-1638457190880-b88e867a84f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=714&q=80",
+      "id": "elKYLFq"
+    },
+    {
+      "name": "hhhhh",
+      "parent": "elKYLFq",
+      "image": "https://images.unsplash.com/photo-1638457190880-b88e867a84f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=714&q=80",
+      "id": "UTmWljF"
+    },
+    {
+      "name": "kk",
+      "parent": "fveNy31",
+      "image": "https://images.unsplash.com/photo-1638457190880-b88e867a84f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=714&q=80",
+      "id": "e24RuIr"
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "content": "how are you!",
+      "subject_id": 1,
+      "type": "bool",
+      "level_id": 1,
+      "point": 15,
+      "responses": [
+        {
+          "respons_id": 1,
+          "isTrue": true
+        },
+        {
+          "respons_id": 2,
+          "isTrue": false
+        }
+      ]
+    }
+  ],
+  "levels": [
+    {
+      "name": "medium",
+      "min": "40",
+      "max": "58",
+      "id": 1
+    },
+    {
+      "id": 1,
+      "name": "hard",
+      "min": 90,
+      "max": 100
+    },
+    {
+      "name": "hard ",
+      "min": "100",
+      "max": "125",
+      "id": 3
+    }
+  ],
+  "responses": [
+    {
+      "id": 1,
+      "content": "Yes"
+    }
+  ],
+  "test": [
+    {
+      "id": 1,
+      "created_at": "2021-12-01",
+      "image": "",
+      "subject": 1,
+      "percentage": 50,
+      "pass_at": "2020-02-12 10:55",
+      "end_at": "2020-02-12 12:55",
+      "questions": [
+        1
+      ]
+    }
+  ],
+  "results": [
+    {
+      "id": 1,
+      "student_id": 1,
+      "score": 220,
+      "history": [
+        {
+          "question_id": 1,
+          "response_id": 1,
+          "point": 15
+        }
+      ]
+    }
+  ]
+}
