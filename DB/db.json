@@ -10,20 +10,11 @@
   ],
   "teachers": [
     {
-      "name": "jeffff",
-      "email": "jeff@la.nooo",
-      "cin": "",
-      "subjects": [
-        "fveNy31"
-      ],
-      "id": 3
-    },
-    {
-      "name": "hh",
+      "name": "hassanes",
       "email": "hassan@admin.com",
-      "cin": "ma615151",
+      "cin": "amam",
       "subjects": [
-        "elKYLFq"
+        "hz_6Lc0"
       ],
       "id": 4
     }
@@ -82,6 +73,24 @@
       "parent": "fveNy31",
       "image": "https://images.unsplash.com/photo-1638457190880-b88e867a84f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=714&q=80",
       "id": "e24RuIr"
+    },
+    {
+      "name": "subject",
+      "parent": "uMZj68l",
+      "image": "https://images.unsplash.com/photo-1638457190880-b88e867a84f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=714&q=80",
+      "id": "nOoyn2U"
+    },
+    {
+      "name": "subject 2",
+      "parent": "uMZj68l",
+      "image": "https://images.unsplash.com/photo-1638457190880-b88e867a84f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=714&q=80",
+      "id": "iWSxR_Z"
+    },
+    {
+      "name": "subject 3",
+      "parent": "uMZj68l",
+      "image": "https://images.unsplash.com/photo-1638457190880-b88e867a84f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=714&q=80",
+      "id": "ME9oauR"
     }
   ],
   "questions": [
@@ -108,7 +117,7 @@
     {
       "name": "medium",
       "min": "40",
-      "max": "58",
+      "max": "50",
       "id": 1
     },
     {
